@@ -1,0 +1,175 @@
+# NOTICE: This lockfile contains some overrides from shard.override.yml
+version: 2.0
+shards:
+  asciicrystal:
+    git: https://github.com/aloli-crystal/asciicrystal.git
+    version: 2.0.26.27
+
+  asciicrystal-pdf:
+    git: https://github.com/aloli-crystal/asciicrystal-pdf.git
+    version: 2.3.24.112
+
+  authn: # Overridden
+    git: https://github.com/aloli-crystal/authn.git
+    version: 0.3.0
+
+  bcrypt:
+    git: https://github.com/jgaskins/bcrypt.git
+    version: 0.1.0+git.commit.4004f17053cba6f2c752ea83162f405143ab541c
+
+  bindata:
+    git: https://github.com/spider-gazelle/bindata.git
+    version: 3.2.1
+
+  country-flags:
+    git: https://github.com/aloli-crystal/country-flags.git
+    version: 0.1.5
+
+  db:
+    git: https://github.com/crystal-lang/crystal-db.git
+    version: 0.14.0
+
+  ed25519:
+    git: https://github.com/spider-gazelle/ed25519.git
+    version: 1.1.0
+
+  email:
+    git: https://github.com/arcage/crystal-email.git
+    version: 0.7.1
+
+  emojis:
+    git: https://github.com/aloli-crystal/emojis.git
+    version: 0.2.5
+
+  i18n:
+    git: https://github.com/crystal-i18n/i18n.git
+    version: 0.2.2
+
+  jose: # Overridden
+    git: https://github.com/aloli-crystal/jose.git
+    version: 0.2.0
+
+  jwt:
+    git: https://github.com/crystal-community/jwt.git
+    version: 1.7.2
+
+  kramdown-asciidoc:
+    git: https://github.com/aloli-crystal/kramdown-asciidoc.git
+    version: 2.1.1.5
+
+  marten: # Overridden
+    git: https://github.com/aloli-crystal/marten.git
+    version: 0.7.0+git.commit.daabb7c242a307a1c90899acbbf5c40f170fe2b8
+
+  marten_auth:
+    git: https://github.com/martenframework/marten-auth.git
+    version: 0.2.1
+
+  matrix:
+    git: https://github.com/exilor/matrix.git
+    version: 0.1.0+git.commit.db74e62dcc0b65e548bf1a8eda65657310f57152
+
+  msgpack:
+    git: https://github.com/crystal-community/msgpack-crystal.git
+    version: 1.3.5
+
+  noto-cjk:
+    git: https://github.com/aloli-crystal/noto-cjk.git
+    version: 0.1.5
+
+  openssl_ext:
+    git: https://github.com/spider-gazelle/openssl_ext.git
+    version: 2.8.5
+
+  partiduo: # Overridden
+    git: https://github.com/aloli-crystal/partiduo-app.git
+    version: 0.1.0+git.commit.bfbdf398ab35d4f71c8dc21fdc9d968de149f7d7
+
+  partiduo-choruspro:
+    git: https://github.com/aloli-crystal/partiduo-choruspro.git
+    version: 0.1.0+git.commit.4b39fa413545c96eb7887a28c0b3706ac819c5b9
+
+  partiduo-crm:
+    git: https://github.com/aloli-crystal/partiduo-crm.git
+    version: 0.1.0+git.commit.c0cfa63ad3886857aaae35e9fad058bf282f76a1
+
+  partiduo-document: # Overridden
+    git: https://github.com/aloli-crystal/partiduo-document.git
+    version: 0.1.0+git.commit.6bb87ad135a360805bd2deadd4b67f49882f6abe
+
+  partiduo-einvoicing: # Overridden
+    git: https://github.com/aloli-crystal/partiduo-einvoicing.git
+    version: 0.1.0+git.commit.708c610c043b4f6357f96880bb83b46be34b1a01
+
+  partiduo-esalink:
+    git: https://github.com/aloli-crystal/partiduo-esalink.git
+    version: 0.1.0+git.commit.d8a4acec5bdda482a89e84ee69ffb6fe73d1bdf6
+
+  partiduo-modeles:
+    git: https://github.com/aloli-crystal/partiduo-modeles.git
+    version: 0.1.0+git.commit.03ad0dec88cdee53baf1856c13bbf8c1f04bfedc
+
+  partiduo-superpdp:
+    git: https://github.com/aloli-crystal/partiduo-superpdp.git
+    version: 0.1.0+git.commit.62c3e3ed61d99ee7e6c339aa14cd97e078c62a02
+
+  partiduo-teledec:
+    git: https://github.com/aloli-crystal/partiduo-teledec.git
+    version: 0.1.0+git.commit.e614093513ab896930a5f1db2cefe1e7aa40d440
+
+  partiduo-ui-bulma: # Overridden
+    git: https://github.com/aloli-crystal/partiduo-ui-bulma.git
+    version: 0.1.0+git.commit.ef76b8a9873b63cc712bc1e1e59f8b217a194336
+
+  partiduo-urssaf:
+    git: https://github.com/aloli-crystal/partiduo-urssaf.git
+    version: 0.2.0+git.commit.e361b34c03b96df52d5b9858b813c2427916d93e
+
+  password-policy: # Overridden
+    git: https://github.com/aloli-crystal/password-policy.git
+    version: 0.1.0
+
+  pdf: # Overridden
+    git: https://github.com/aloli-crystal/pdf.git
+    version: 1.22.0
+
+  pdf-a: # Overridden
+    git: https://github.com/aloli-crystal/pdf-a.git
+    version: 0.3.0
+
+  pdf-validate: # Overridden
+    git: https://github.com/aloli-crystal/pdf-validate.git
+    version: 0.47.0
+
+  pg:
+    git: https://github.com/will/crystal-pg.git
+    version: 0.30.0
+
+  rouge:
+    git: https://github.com/aloli-crystal/rouge.git
+    version: 4.7.0.3
+
+  saml: # Overridden
+    git: https://github.com/aloli-crystal/saml.git
+    version: 1.18.1.3
+
+  stumpy_core:
+    git: https://github.com/stumpycr/stumpy_core.git
+    version: 1.9.1
+
+  stumpy_jpeg:
+    git: https://github.com/stumpycr/stumpy_jpeg.git
+    version: 0.1.0+git.commit.714ad6c1f905cb503c53843cda8285f52592e2c2
+
+  stumpy_png:
+    git: https://github.com/stumpycr/stumpy_png.git
+    version: 5.0.1
+
+  totp: # Overridden
+    git: https://github.com/aloli-crystal/totp.git
+    version: 0.1.0
+
+  webauthn: # Overridden
+    git: https://github.com/aloli-crystal/webauthn.git
+    version: 0.1.0
+

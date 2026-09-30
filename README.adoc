@@ -1,0 +1,40 @@
+= partiduo-dist
+:icons: font
+
+Distribution de production de Partiduo : le cœur (`partiduo-app`), l'interface
+Bulma (`partiduo-ui-bulma`) et toutes les extensions, composés en une seule
+application. C'est la source du paquet FreeBSD `partiduo-app` (dépôt de ports
+`aloli-ports`, publié sur `pkg.aloli.net`).
+
+== Programmes
+
+[cols="1,3",options="header"]
+|===
+|Programme |Rôle
+
+|`partiduo-server` |Serveur HTTP d'une instance (réglages de production de `partiduo-ui-bulma`).
+|`partiduo-manage` |Ligne de commande Marten : `migrate`, `provision`, `collectassets`…
+|`partiduo-modeles-pdf` |Convertisseur PDF de l'extension MODELES, lancé par le serveur (`PARTIDUO_MODELES_PDF=auto` : cherché à côté de `partiduo-server`).
+|===
+
+Chaque extension s'active ou non par instance (`PARTIDUO_MODULES`).
+
+== Versions figées
+
+Toutes les dépendances viennent de GitHub (dépôts publics `aloli-crystal`),
+branche par défaut ; `shard.override.yml` y ramène celles que les dépôts
+déclarent en `path:` pour le développement local. `shard.lock`, versionné,
+fixe le commit de chacune : c'est ce que le port construit. Pour monter de
+version, publier les dépôts concernés, puis :
+
+[source,sh]
+----
+SKIP_MARTEN_CLI_PRECOMPILATION=1 shards update
+SKIP_MARTEN_CLI_PRECOMPILATION=1 shards build --release
+----
+
+puis committer `shard.lock` et régénérer la liste des sources du port
+(`aloli-ports`).
+
+Le développement se fait dans les dépôts de chaque partie, avec leurs
+dépendances locales ; la démonstration locale est `partiduo-demo`.

@@ -1,0 +1,62 @@
+name: partiduo-dist
+version: 0.1.0
+
+description: |
+  Distribution de production de Partiduo : le cœur, l'interface Bulma et
+  toutes les extensions composés en une seule application, avec le
+  convertisseur PDF de l'extension MODELES. Source du paquet FreeBSD
+  partiduo-app (dépôt de ports aloli-ports, publié sur pkg.aloli.net) :
+  shard.lock fixe les commits exacts qu'il construit.
+
+authors:
+  - Philippe Nénert <it+claude.ai@aloli.fr>
+
+crystal: ">= 1.19.1"
+
+license: AGPL-3.0-or-later
+
+targets:
+  # Serveur HTTP d'une instance.
+  partiduo-server:
+    main: src/server.cr
+  # Ligne de commande Marten (migrate, provision, collectassets…).
+  partiduo-manage:
+    main: manage.cr
+  # Convertisseur PDF de MODELES, lancé en processus séparé par le serveur
+  # (partiduo-modeles, D-MOD-017).
+  partiduo-modeles-pdf:
+    main: lib/partiduo-modeles/src/partiduo-modeles/pdf.cr
+
+# Toutes depuis GitHub (dépôts publics aloli-crystal), branche par défaut :
+# shard.lock en retient le commit. Les dépendances déclarées en path: par
+# les dépôts eux-mêmes (développement local) sont ramenées sur GitHub par
+# shard.override.yml.
+dependencies:
+  # Le cœur : registre, événements et contrat Partiduo::Api.
+  partiduo:
+    github: aloli-crystal/partiduo-app
+  # L'interface Bulma, qui monte les interfaces des extensions.
+  partiduo-ui-bulma:
+    github: aloli-crystal/partiduo-ui-bulma
+  # Extensions, activées ou non par instance (PARTIDUO_MODULES).
+  partiduo-document:
+    github: aloli-crystal/partiduo-document
+  partiduo-einvoicing:
+    github: aloli-crystal/partiduo-einvoicing
+  partiduo-superpdp:
+    github: aloli-crystal/partiduo-superpdp
+  partiduo-esalink:
+    github: aloli-crystal/partiduo-esalink
+  partiduo-choruspro:
+    github: aloli-crystal/partiduo-choruspro
+  partiduo-teledec:
+    github: aloli-crystal/partiduo-teledec
+  partiduo-urssaf:
+    github: aloli-crystal/partiduo-urssaf
+  partiduo-crm:
+    github: aloli-crystal/partiduo-crm
+  partiduo-modeles:
+    github: aloli-crystal/partiduo-modeles
+  marten:
+    github: aloli-crystal/marten
+    branch: production

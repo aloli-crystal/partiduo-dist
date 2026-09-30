@@ -1,0 +1,9 @@
+.env
+.DS_Store
+*.dwarf
+/.shards/
+/lib/
+/bin/
+/tmp/
+/media/
+/assets/
