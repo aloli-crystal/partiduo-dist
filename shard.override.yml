@@ -1,4 +1,5 @@
-# Ramène sur GitHub (branche par défaut, commit retenu par shard.lock) les
+# Ramène sur GitHub (commit retenu par shard.lock ; partiduo-* sur la branche
+# de partiduo-dist, shards maison sur production) les
 # dépendances que les dépôts déclarent en path: pour le développement local
 # (DECISIONS D-003 de partiduo-app), et le fork aloli-crystal/marten que
 # marten_auth déclare chez martenframework ; marten suit la branche
@@ -8,12 +9,16 @@
 dependencies:
   partiduo:
     github: aloli-crystal/partiduo-app
+    branch: development
   partiduo-ui-bulma:
     github: aloli-crystal/partiduo-ui-bulma
+    branch: development
   partiduo-document:
     github: aloli-crystal/partiduo-document
+    branch: development
   partiduo-einvoicing:
     github: aloli-crystal/partiduo-einvoicing
+    branch: development
   marten:
     github: aloli-crystal/marten
     branch: production
