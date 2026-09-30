@@ -19,6 +19,21 @@ application. C'est la source du paquet FreeBSD `partiduo-app` (dépôt de ports
 
 Chaque extension s'active ou non par instance (`PARTIDUO_MODULES`).
 
+== Deux branches, deux paquets
+
+[cols="1,1,2",options="header"]
+|===
+|Branche de partiduo-dist |Paquet FreeBSD |Dépôts partiduo-* suivis
+
+|`development` |`partiduo-app-devel` |branche `development`
+|`production` (à créer) |`partiduo-app` |branche `production` (à créer dans chaque dépôt)
+|===
+
+Les shards maison (marten, pdf, authn…) suivent leur branche `production`
+dans les deux cas. La branche `production` de ce dépôt ne peut être créée
+qu'après publication des branches `production` des dépôts partiduo-* :
+`shard.lock` ne peut désigner que des commits publiés.
+
 == Versions figées
 
 Toutes les dépendances viennent de GitHub (dépôts publics `aloli-crystal`),
