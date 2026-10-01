@@ -83,7 +83,7 @@ shards:
 
   partiduo: # Overridden
     git: https://github.com/aloli-crystal/partiduo-app.git
-    version: 0.1.0+git.commit.bfbdf398ab35d4f71c8dc21fdc9d968de149f7d7
+    version: 0.1.0+git.commit.7afbe99edc17ec874ca2f1ddabffad52f578bd2f
 
   partiduo-choruspro:
     git: https://github.com/aloli-crystal/partiduo-choruspro.git
@@ -99,7 +99,7 @@ shards:
 
   partiduo-einvoicing: # Overridden
     git: https://github.com/aloli-crystal/partiduo-einvoicing.git
-    version: 0.1.0+git.commit.708c610c043b4f6357f96880bb83b46be34b1a01
+    version: 0.1.0+git.commit.37c9cda6c2c3a92392b01fd44671da84efc6767b
 
   partiduo-esalink:
     git: https://github.com/aloli-crystal/partiduo-esalink.git
@@ -115,11 +115,11 @@ shards:
 
   partiduo-teledec:
     git: https://github.com/aloli-crystal/partiduo-teledec.git
-    version: 0.1.0+git.commit.e614093513ab896930a5f1db2cefe1e7aa40d440
+    version: 0.1.0+git.commit.f969475e3f6acbb98f20c10e7ebf1377f6c79c2e
 
   partiduo-ui-bulma: # Overridden
     git: https://github.com/aloli-crystal/partiduo-ui-bulma.git
-    version: 0.1.0+git.commit.ef76b8a9873b63cc712bc1e1e59f8b217a194336
+    version: 0.1.0+git.commit.4ecce0ef377fa8db08e56b8ee33eef8b11fe1eb5
 
   partiduo-urssaf:
     git: https://github.com/aloli-crystal/partiduo-urssaf.git
