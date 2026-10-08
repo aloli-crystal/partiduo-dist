@@ -27,7 +27,7 @@ shards:
 
   db:
     git: https://github.com/crystal-lang/crystal-db.git
-    version: 0.14.0
+    version: 0.15.0
 
   ed25519:
     git: https://github.com/spider-gazelle/ed25519.git
@@ -83,47 +83,47 @@ shards:
 
   partiduo: # Overridden
     git: https://github.com/aloli-crystal/partiduo-app.git
-    version: 0.1.0+git.commit.fb179b99093553f56e0c83976342be2dc96f5d32
+    version: 0.1.0+git.commit.5c2267987c0438050c2c22ac4250d6f39ed527fe
 
   partiduo-choruspro:
     git: https://github.com/aloli-crystal/partiduo-choruspro.git
-    version: 0.1.0+git.commit.4b39fa413545c96eb7887a28c0b3706ac819c5b9
+    version: 0.1.0+git.commit.5a5618e105c0994045aed4e9f6cf9b7f9d2aa5b4
 
   partiduo-crm:
     git: https://github.com/aloli-crystal/partiduo-crm.git
-    version: 0.1.0+git.commit.c0cfa63ad3886857aaae35e9fad058bf282f76a1
+    version: 0.1.0+git.commit.a22de7cfbb4c27e0423edf8aae9d7b272252c827
 
   partiduo-document: # Overridden
     git: https://github.com/aloli-crystal/partiduo-document.git
-    version: 0.1.0+git.commit.6bb87ad135a360805bd2deadd4b67f49882f6abe
+    version: 0.1.0+git.commit.097d534f8370ead82701eb6d4df5f097d79b4b94
 
   partiduo-einvoicing: # Overridden
     git: https://github.com/aloli-crystal/partiduo-einvoicing.git
-    version: 0.1.0+git.commit.37c9cda6c2c3a92392b01fd44671da84efc6767b
+    version: 0.1.0+git.commit.7d0a66623dc43f39125c099dce68aa170a59d8cf
 
   partiduo-esalink:
     git: https://github.com/aloli-crystal/partiduo-esalink.git
-    version: 0.1.0+git.commit.d8a4acec5bdda482a89e84ee69ffb6fe73d1bdf6
+    version: 0.1.0+git.commit.cd28f74752ebb62383c37e2be2000af51d147c48
 
   partiduo-modeles:
     git: https://github.com/aloli-crystal/partiduo-modeles.git
-    version: 0.1.0+git.commit.03ad0dec88cdee53baf1856c13bbf8c1f04bfedc
+    version: 0.1.0+git.commit.44f170a02b7030d4573b6c9c80e3192203057915
 
   partiduo-superpdp:
     git: https://github.com/aloli-crystal/partiduo-superpdp.git
-    version: 0.1.0+git.commit.62c3e3ed61d99ee7e6c339aa14cd97e078c62a02
+    version: 0.1.0+git.commit.f7401db34a9800c75781dfea1a3a5def95900114
 
   partiduo-teledec:
     git: https://github.com/aloli-crystal/partiduo-teledec.git
-    version: 0.1.0+git.commit.9056f330473176ce245d34ad1fd145bb36bf4fa1
+    version: 0.1.0+git.commit.9c1855f7729ee124ef988096c28f6470e2824bff
 
   partiduo-ui-bulma: # Overridden
     git: https://github.com/aloli-crystal/partiduo-ui-bulma.git
-    version: 0.1.0+git.commit.4ecce0ef377fa8db08e56b8ee33eef8b11fe1eb5
+    version: 0.1.0+git.commit.ac5696095c78fa9656f93942732f956a625e023a
 
   partiduo-urssaf:
     git: https://github.com/aloli-crystal/partiduo-urssaf.git
-    version: 0.2.0+git.commit.e361b34c03b96df52d5b9858b813c2427916d93e
+    version: 0.2.0+git.commit.784b6908747824e828326f63c09fb8b5f523a149
 
   password-policy: # Overridden
     git: https://github.com/aloli-crystal/password-policy.git
@@ -143,7 +143,7 @@ shards:
 
   pg:
     git: https://github.com/will/crystal-pg.git
-    version: 0.30.0
+    version: 0.31.0
 
   rouge:
     git: https://github.com/aloli-crystal/rouge.git
